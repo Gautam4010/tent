@@ -8,7 +8,7 @@ body {
 .top {
   background-color: #ddb334;
   height: 45px;
-  width: 100%;
+  width: 1348px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,22 +30,35 @@ body {
   padding-top: 8px;
   
 }
+.book a{
+  color:white;
+  padding:10px 10px;
+  font-size: 13px;
+}
+
+.book:hover a{
+  color: #945034;
+  font-size: 13px;
+  
+
+}
 
 .book:hover {
   background-color: #ddb334;
-  color: #945034;
   border: 1px solid #945034 ;
+  color: #945034;
 
 }
 .navbar {
   background-color: black;
   height: 60px;
-  width: 100%;
+  width: 1348px;
   float: left;
   position: sticky;
   top: 0px;
   border-bottom: 3px solid #ddb334;
   box-shadow: 2px 2px 5px rgb(121, 121, 68);
+  z-index: 1000;
 }
 
 #n1 {
@@ -71,27 +84,39 @@ body {
   color: black;
 }
 
-#dropdown{
-    display: none;
+#n1 #home a{
+  border-bottom: 1px solid #fada7a; 
 }
 
-#n1 li:hover #dropdown{
+#dropdown{
+    display: none;
+    /* border: 1px solid white; */
+    transition: transform 1s;
+    
+}
+
+#n1 #gallery:hover #dropdown{
     display:block;
     list-style-type: none;
     background-color: black;
     position: absolute;
     padding:10px;
     margin-left: 1070px;
-    margin-top: 20px;
-     border-radius: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-bottom:1px solid yellow;
 }
 
-#n1 li:hover #dropdown li{
-  float:none;
+#n1 #gallery:hover #dropdown li{
+  /* float:none; */
   text-align: left;
- 
- 
+  transition:transform 1s;
 }
+
+#n1 #gallery #dropdown li:hover{
+  transform: translate(10px,0px);
+}
+
 
 #n1 ul li{
     
@@ -104,10 +129,12 @@ body {
   padding-left:10px;
 }
 
+
+
 .slider-area {
   background-color: pink;
   height: 800px;
-  width: 100%;
+  width: 1348px;
 }
 
 .slider-area img {
@@ -118,7 +145,7 @@ body {
 .wellcome {
   background-color: white;
   height: 600px;
-  width: 100%;
+  width: 1348px;
 }
 
 .wellcome #welcome1{
@@ -153,8 +180,8 @@ body {
 
 .seg {
   background-color: white;
-  height: 170px;
-  width: 100%;
+  height: 140px;
+  width: 1348px;
   float: left;
   justify-content: center;
   text-align: center;
@@ -162,12 +189,12 @@ body {
 }
 
 .segment {
-  height: 750px;
-  width: 100%;
+  height: 700px;
+  width: 1348px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://media.istockphoto.com/id/479977238/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?s=612x612&w=0&k=20&c=yIKLzW7wMydqmuItTTtUGS5cYTmrRGy0rXk81AltdTA=");
+  background-image: url("image/image1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,10 +204,11 @@ body {
 .segment #s div {
   width: 400px;
   height: 260px;
-  border-radius: 10px;
+  border-top-left-radius:30px;
+  border-bottom-right-radius:30px;
   margin: 5px;
   display: inline-block;
-  background-color: rgb(255, 128, 128, 0.9);
+  background-image: url("https://plus.unsplash.com/premium_photo-1661962446158-b6f5ffeb3e2d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   padding:10px ;
   text-align: justify;
 
@@ -198,8 +226,8 @@ body {
 
 .test-up {
   background-color: white;
-  height: 170px;
-  width: 100%;
+  height: 110px;
+  width: 1348px;
   float: left;
   justify-content: center;
   text-align: center;
@@ -214,7 +242,7 @@ body {
 .testing {
   background-color:white;
   height: 400px;
-  width: 100%;
+  width: 1348px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,19 +253,19 @@ body {
     height:300px;
     width:33%;
     margin:10px;
+    overflow: hidden;
     
 }
 
-.testing #testing1:hover{
-  height:330px;
-  border: 5px solid green;
-  
+.testing #testing1 img:hover{
+ transform: scale(1.2,1.2);
   
 }
 
 .testing #testing1 img{
    height: 100%;
    width:100%;
+
 }
 
 .testing #testing2{
@@ -245,14 +273,14 @@ body {
   width:33%;
   background-color:yellow;
   margin:10px;
+  overflow: hidden;
+
 }
 
-.testing #testing2:hover{
-  height:330px;
-  border: 5px solid yellow;
-  
-  
-}
+.testing #testing2 img:hover{
+  transform: scale(1.2,1.2);
+   
+ }
 
 .testing #testing2 img{
   height: 100%;
@@ -263,14 +291,14 @@ body {
   width:33%;
   background-color:yellow;
   margin:10px;
+  overflow: hidden;
+
 }
 
-.testing #testing3:hover{
-  height:330px;
-  border: 5px solid blue;
-  
-  
-}
+.testing #testing3 img:hover{
+  transform: scale(1.2,1.2);
+   
+ }
 
 .testing #testing3 img{
   height: 100%;
@@ -279,7 +307,7 @@ body {
 
 .marriage{
   height:700px;
-  width:100%;
+  width:1348px;
   background-color: whites;
   display: flex;
   
@@ -400,7 +428,7 @@ body {
 .venus {
   background-color: #f1e7e7;
   height: 500px;
-  width: 100%;
+  width: 1348px;
   display: flex;
   justify-content:center;
   align-items: center;
@@ -419,6 +447,8 @@ body {
   border-bottom: 3px solid #ddb334;
   box-shadow: 2px 6px 5px gray;
   text-align: center;
+  transition:transform 1s;
+  
 }
 
 
@@ -443,7 +473,7 @@ body {
 
 
 .venus #venus1:hover{
-  height:400px;
+  transform: translate(0px, -20px);
 
 }
 
@@ -463,6 +493,8 @@ body {
   border-bottom: 3px solid #ddb334;
   box-shadow: 2px 6px 5px gray;
   text-align: center;
+  transition:transform 1s;
+
 }
 
 .venus #venus2 a{
@@ -490,7 +522,8 @@ body {
 }
 
 .venus #venus2:hover{
-  height:400px;
+  transform: translate(0px, -20px);
+  
 
 }
 
@@ -509,6 +542,9 @@ body {
   border-bottom: 3px solid #ddb334;
   box-shadow: 2px 6px 5px gray;
   text-align: center;
+  transition:transform 1s;
+  margin-left: 10px;
+
 }
 
 .venus #venus3 a{
@@ -530,7 +566,8 @@ body {
 
 
 .venus #venus3:hover{
-  height:380px;
+  transform: translate(0px, -20px);
+  
 
 }
 
@@ -543,8 +580,8 @@ body {
 
 .eve{
   background-color:#e1eebc;
-  height: 100px;
-  width: 100%;
+  height: 60px;
+  width: 1348px;
   float: left;
   justify-content: center;
   text-align: center;
@@ -560,7 +597,7 @@ body {
 .event {
   background-color: #e1eebc;
   height: 600px;
-  width: 100%;
+  width: 1348px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -606,7 +643,7 @@ body {
 .service-up{
   background-color: #e1eebc;
   height: 150px;
-  width:100%;
+  width:1348px;
   float: left;
   text-align: center;
   text-shadow: 2px 6px 5px gray;
@@ -614,11 +651,12 @@ body {
 
 .service {
   height: 1100px;
-  width: 100%;
+  width: 1348px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://media.istockphoto.com/id/493839116/photo/tables-with-centerpieces-at-wedding-reception.jpg?s=612x612&w=0&k=20&c=g-tb7QZoq3nGXBKEsjNf-hPUUt-U_rhDny0VnHWd3xk=");
+  background-color: #090c09a1;
+  /* background-image: url("http://www.rktent.in/icon.jpg"); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -637,7 +675,7 @@ body {
   width: 400px;
   height: 260px;
   display: inline-block;
-  margin: 5px;
+  margin: 20px 10px;
   background-color: rgba(255, 255, 255, 0.158);
   border: 2px dotted white;
 
@@ -654,16 +692,42 @@ body {
 #ser .s1 div{
   height: 30px;
   width:300px;
+}
+
+#ser .s1 p{
+  color: white;
+  padding: 30px;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.service #ser .s1 img{
+  margin-left: 170px;
+  margin-top:20px;
+ 
+}
 
 
+.service #ser .s1 .s2{
+  height:40px;
+  width:350px;
+  margin-left: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:bold;
+  font-size: larger;
+  background-color: rgba(255, 255, 255, 0.397);
 }
 
 
 
 
 
+
 #footerarea{
-  width:1200px;
+  width:1348px;
   height:410px;
   background:pink;
 
@@ -705,10 +769,13 @@ body {
 #f3 a{
   text-decoration: none;
   color: #e1eebc;
+  transition:transform 4s;
+  display:block;
 }
 
 #f3 a:hover{
   color:#ddb334;
+  transform: translate(40px,0px);
 }
 
 
