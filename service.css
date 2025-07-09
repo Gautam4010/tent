@@ -31,6 +31,18 @@ body {
     padding-top: 8px;
     
   }
+  .book a{
+    color:white;
+    padding:10px 10px;
+    font-size: 13px;
+  }
+  
+  .book:hover a{
+    color: #945034;
+    font-size: 13px;
+    
+  
+  }
   
   .book:hover {
     background-color: #ddb334;
@@ -71,6 +83,11 @@ body {
     background-color: #ddb334;
     color: black;
   }
+
+  #n1 #service a{
+    border-bottom: 1px solid #fada7a; 
+ }
+  
   
   #dropdown{
       display: none;
@@ -157,7 +174,7 @@ body {
     width:360px;
     background-color:#FFEEA9;
     border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     border-left:4px solid white;
     text-align: center;
     
@@ -171,6 +188,7 @@ body {
     border-bottom-right-radius: 30px;
     display: block;
     margin-left: 40px;
+    margin-bottom:15px;
    
   }
 
@@ -199,7 +217,7 @@ body {
     width:800px;
     background-color:white;
     margin-left:30px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     border-right:4px solid #FFEEA9;
   }
@@ -218,7 +236,7 @@ body {
     background-color:white;
     margin-left:30px;
     border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     border-left:4px solid #FFEEA9;
     
   }
@@ -236,7 +254,7 @@ body {
     width:360px;
     background-color:#FFEEA9;
     border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
     margin-left:30px;
     border-right:4px solid white;
     text-align: center;
@@ -250,6 +268,8 @@ body {
     border-bottom-left-radius: 30px;
     display: block;
     margin-left: 40px;
+    margin-bottom:15px;
+
    
   }
 

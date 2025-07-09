@@ -8,7 +8,7 @@ body {
   .top {
     background-color: #ddb334;
     height: 45px;
-    width: 100%;
+    width: 1348px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,6 +30,19 @@ body {
     padding-top: 8px;
     
   }
+
+  .book a{
+    color:white;
+    padding:10px 10px;
+    font-size: 13px;
+  }
+  
+  .book:hover a{
+    color: #945034;
+    font-size: 13px;
+    
+  
+  }
   
   .book:hover {
     background-color: #ddb334;
@@ -40,12 +53,13 @@ body {
   .navbar {
     background-color: black;
     height: 60px;
-    width: 100%;
+    width: 1348px;
     float: left;
     position: sticky;
     top: 0px;
     border-bottom: 3px solid #ddb334;
     box-shadow: 2px 2px 5px rgb(121, 121, 68);
+    z-index: 1000;
   }
   
   #n1 {
@@ -99,6 +113,10 @@ body {
       padding:10px;
       
   }
+
+  #n1 #about a{
+    border-bottom: 1px solid #fada7a; 
+}
   
   .navbar ul li i{
     padding-left:10px;
@@ -107,8 +125,8 @@ body {
 
 
   .slider-area{
-    height: 1200px;
-    width:100%;
+    height: 1000px;
+    width:1348px;
   }
   
   .slider-area img{
@@ -124,13 +142,14 @@ body {
   .about .about1{
     height:100px;
     width:100%;
-    background-color: pink;
   }
 
   .about .about1 h1{
     text-align: center;
     margin-top:60px;
     padding:30px;
+    background-color: #f3db94;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   }
 
 
@@ -138,6 +157,8 @@ body {
     text-align: center;
     padding-top:30px ;
     font-style: italic;
+    color: #ddb334;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   }
 
   .about .about2 p{
@@ -146,35 +167,62 @@ body {
     font-size: 18px;
   }
 
+
+  .card-intro{
+    background-color: #f1e7e7;
+    height: 150px;
+
+    
+  }
+
+  .card-intro h1{
+    text-align: center;
+    font-style: italic;
+    color: #ddb334;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    
+  }
+   
+
+  .card-intro p{
+    padding:10px 90px 10px 90px;
+    font-size: 18px;
+
+
+
+  }
+
+
   .card-section{
     height: 800px;
     width:100%;
     background-color: whitesmoke;
+
   }
 
   
 .card {
     background-color: #f1e7e7;
-    height: 500px;
-    width: 100%;
+    height: 650px;
+    width: 1348px;
     display: flex;
     justify-content:center;
     align-items: center;
     
     
-  
   }
   
   
   .card #card1{
     background-color: white;
-    height: 550px;
+    height: 500px;
     width: 300px;
     margin:10px;
     border-radius: 20px;
     border-bottom: 3px solid #ddb334;
     box-shadow: 2px 6px 5px gray;
     text-align: center;
+    transition: transform 1s;
   }
   
   
@@ -195,6 +243,10 @@ body {
     color:rgb(83, 8, 8);
   }
       
+  .card #card1:hover{
+    transform: translate(0px,-20px);
+  }
+     
 
   
   .card #card1 img{
@@ -203,22 +255,20 @@ body {
     border-radius: 20px 20px 0 0;
   }
 
-  .card #card1 h2{
-    padding:20px;
-   
-  }
-  
   
   .card #card2{
     background-color: white;
-    height: 370px;
+    height: 500px;
     width: 300px;
     margin:10px;
     border-radius: 20px;
     border-bottom: 3px solid #ddb334;
     box-shadow: 2px 6px 5px gray;
     text-align: center;
+    transition: transform 1s;
+
   }
+  
   
   .card #card2 a{
   
@@ -236,18 +286,14 @@ body {
     border:1px solid rgb(83, 8, 8);
     color:rgb(83, 8, 8);
   }
-  
-  .card #card2 a:hover{
-  
-     background-color:white ;
-     border:1px solid rgb(83, 8, 8);
-     color:rgb(83, 8, 8);
-  }
+
   
   .card #card2:hover{
-    height:400px;
-  
-  }
+  transform: translate(0px,-20px);
+    
+ }
+ 
+
   
   .card #card2 img{
     height:250px;
@@ -258,13 +304,15 @@ body {
   
   .card #card3{
     background-color:white;
-    height: 370px;
+    height: 500px;
     width: 300px;
     border-radius: 20px;
     border-bottom: 3px solid #ddb334;
     box-shadow: 2px 6px 5px gray;
     text-align: center;
     margin:10px;
+    transition: transform 1s;
+
   }
   
   .card #card3 a{
@@ -284,11 +332,10 @@ body {
     color:rgb(83, 8, 8);
   }
   
-  
   .card #card3:hover{
-    height:380px;
-  
+    transform: translate(0px,-20px);
   }
+  
   
   .card #card3 img{
     height:250px;
@@ -301,13 +348,15 @@ body {
 
   .card #card4{
     background-color:white;
-    height: 370px;
+    height: 500px;
     width: 300px;
     border-radius: 20px;
     border-bottom: 3px solid #ddb334;
     box-shadow: 2px 6px 5px gray;
     text-align: center;
     margin: 10px;
+    transition: transform 1s;
+
   }
   
   .card #card4 a{
@@ -326,12 +375,13 @@ body {
     border:1px solid rgb(83, 8, 8);
     color:rgb(83, 8, 8);
   }
-  
-  
+   
   .card #card4:hover{
-    height:380px;
-  
+    transform: translate(0px,-20px);
   }
+  
+  
+
   
   .card #card4 img{
     height:250px;
@@ -339,37 +389,27 @@ body {
     border-radius: 20px 20px 0 0;
   }
 
+  .staf{
+    background-color:white;
+    height: 250px;
+    width:1348px;
+    float:left;
+    border-bottom:3px solid #ddb334;
+  }
 
+  .staf h1{
+    font-style:italic;
+    text-align: center;
+    margin-top: 50px;
+    color: #ddb334;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .staf p{
+    padding:10px 90px 10px 90px;
+    font-size: 18px;
+  }
 
 
   #footerarea{
@@ -434,14 +474,5 @@ body {
   
   #footer-area h2 {
     color:#ddb334;
-  }
-  
-  #copywrite{
-    height:400px;
-    width:100%;
-    background-color:black;
-    text-align: center;
-    padding-top:100px;
-    color: white;
   }
   

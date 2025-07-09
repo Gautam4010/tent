@@ -1,0 +1,322 @@
+<html>
+	<head>
+		<title> CSS DAY-17 </title>
+		<style type="text/css">
+		body{
+			margin:0;
+		}
+
+		#mainarea{
+			width:1200px;
+			height:1500px;
+			background:#169649;
+			margin:0 auto;
+		}
+
+		#toparea{
+			width:1200px;
+			height:150px;
+			background:red;
+		}
+		#logoarea{
+			width:150px;
+			height:150px;
+			background:blue;
+			float:left;
+		}
+		#titlearea{
+			width:1050px;
+			height:150px;
+			background:skyblue;
+			float:left;
+		}			
+		#menuarea{
+			width:1200px;
+			height:40px;
+			background:orange;	
+		}
+		#menuarea ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+			
+		}
+		#menuarea ul li a:link, #menuarea ul li a:visited{
+			color:red;
+			text-decoration:none;
+			background:yellow;
+			padding:10px 25px;
+			display:block;
+			border-right:solid 1px black;
+			
+		}
+		#menuarea ul li a:hover{
+			color:yellow;
+			background:red;
+			display:flex;
+		}
+		#menuarea ul li{
+			float:left;
+		}
+		 #menuarea ul li ul {
+			display:none; 
+			position:absolute;
+			z-index:1000;
+			
+		} 
+		#menuarea ul li:hover ul{
+			display:block;
+			
+		}
+		#menuarea ul li:hover ul li{
+			float:none;
+			border-bottom:solid 1px black;
+			border-right:none;
+		}
+
+
+		#slidearea{
+			width:1000px;
+			height:200px;
+			/*background:gray;*/
+			/*padding-left:100px;
+			padding-right:100px;
+			padding-top:50px;
+			padding-bottom:50px;*/
+			/*padding:50px 100px 50px 100px;*/
+			padding:50px 100px;
+			/*background-image:linear-gradient(to right ,red,skyblue);
+			background-image:linear-gradient(to top left ,red,skyblue);
+			background-image:linear-gradient(-100deg ,red,skyblue);
+			background-image:linear-gradient(30deg ,red,skyblue);*/
+			background-image:linear-gradient(to right ,red 0%,skyblue 20%,green 100%);
+	
+		}
+		#s1{
+			width:1000px;
+			height:200px;
+			background:white;
+			float:left;
+
+			/*marign-top:50px;
+			marign-right:100px;
+			marign-bottom:100px;
+			marign-left:50px;*/
+			/*margin:50px 100px 50px 100px;*/	
+		}
+		#s1 a:link , #s1 a:visited{
+			color:red;
+			text-decoration:none;
+			background:yellow;
+			padding:10px 25px;
+			margin:1px;
+		}
+		#s1 a:hover{
+			color:blue;
+			background:white;
+		}
+			
+		#darea{
+			width:1200px;
+			height:300px;
+			background:black;
+		}
+		/*#d1{
+			width:550px;
+			height:250px;
+			background:pink;
+			float:left;
+			margin:25px 25px;
+			
+		}
+		#d2{
+			width:550px;
+			height:250px;
+			background:purple;
+			float:right;
+			margin:25px 25px;
+		}*/
+		.d{
+			width:550px;
+			height:250px;
+			
+			float:right;
+			margin:25px 25px;
+		}
+		.bg1{
+			background:pink;
+		}
+		.bg2{
+			background:brown;
+		}
+		#boxarea{
+			width:1200px;
+			height:300px;
+			background:royalblue;
+		
+			
+		}
+		.box{
+			width:100px;
+			height:0px;
+			float:left;
+			margin:25px;
+			/*border-top:solid 50px red;*/
+			border-right:solid 50px transparent;
+			border-bottom:solid 50px blue;
+			border-left:solid 50px transparent;
+		}
+				
+		
+		/*#box1{
+			width:350px;
+			height:250px;
+			background:red;
+			float:left;
+			margin:25px;		
+		}
+		#box2{
+			width:350px;
+			height:250px;
+			background:green;
+			float:left;
+			margin:25px;		
+		}
+		#box3{
+			width:350px;
+			height:250px;
+			background:black;
+			float:left;
+			margin:25px;	
+		}*/
+		#footerarea{
+			width:1200px;
+			height:410px;
+			background:pink;
+		}
+		#f1{
+			width:300px;
+			height:410px;
+			background:gray;
+			float:left;
+		}
+		#f1 ul{
+			/*list-style-type: circle;
+			list-style-type:decimal-leading-zero;
+			list-style-type: lower-alpha;
+			list-style-type: upper-alpha;
+			list-style-type: lower-roman;
+			list-style-type: lower-greek;
+			list-style-type:none;
+			list-style-image:url('https://mpsckp.com/images/arr.png');
+			list-style-position:inside;*/
+			list-style:none url('https://mpsckp.com/images/arr.png') inside;
+		}
+		#f2{
+			width:300px;
+			height:410px;
+			background:skyblue;
+			float:left;
+		}
+		/* #f2 ul{
+			list-style:none;
+			margin:0;
+			padding:0;
+			
+		}
+		#f2 ul li a:link, #f2 ul li a:visited{
+			color:red;
+			text-decoration:none;
+			background:yellow;
+			padding:10px 25px;
+			display:block;
+			border-bottom:solid 1px black;
+			
+		}
+		#f2 ul li a:hover{
+			color:yellow;
+			background:red;	
+		} */
+		#f3{
+			width:300px;
+			height:410px;
+			background:orange;
+			float:left;
+		}
+		#f4{
+			width:300px;
+			height:410px;
+			background:pink;
+			float:left;
+		}
+
+
+	</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="toparea">
+				<div id="logoarea">
+				</div>
+				<div id="titlearea">
+				</div>	
+			</div>
+			<div id="menuarea">
+				<ul>
+					<li><a href="#"> HOME</a> </li>
+					<li><a href="#"> ABOUT </a></li>
+					<li><a href="#"> PRODUCTS </a>
+					<ul>
+						<li><a href="#"> products1 </a> </li>
+						<li><a href="#"> products2 </a> </li>
+						<li><a href="#"> products3 </a> </li>
+					 	</li>
+					</ul>
+					<li><a href="#"> GALLERY </a> </li>
+					<li><a href="#"> CONTACT </a> </li>
+				</ul>
+			</div>
+			<div id="slidearea"></div>
+			<div id="darea">
+				<div class="d bg1 ">
+				</div>
+				<div class="d bg2 ">
+				</div>
+			</div>
+			<div id="boxarea">
+				<div class="box">
+			
+				</div>
+				<div class="box">
+				</div>
+				<div class="box">
+				</div>
+			</div>
+			<div id="footerarea">
+				<div id="f1">
+				<ul>
+					<li> HOME </li>
+					<li> ABOUT </li>
+					<li> GALLERY </li>
+					<li> CONTACT </li>
+				</ul>
+				</div>
+				<div id="f2">
+				<ul>
+					<li><a href="#"> HOME</a> </li>
+					<li><a href="#"> ABOUT </a></li>
+					<li><a href="#"> GALLERY </a> </li>
+					<li><a href="#"> CONTACT </a> </li>
+				</ul>
+				
+				</div>
+				<div id="f3">
+				</div>
+				<div id="f4">
+				</div>
+			</div>
+			
+		</div>
+
+	</body>
+</html>

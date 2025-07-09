@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wedding Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf4;
+      color: #333;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1585577529543-5075d6c2fd27') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 5px 15px;
+      border-radius: 8px;
+    }
+
+    .hero .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #d4af37;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .hero .btn:hover {
+      background-color: #a78b24;
+    }
+
+    /* ---------- Services Grid ---------- */
+    .services {
+      padding: 60px 50px;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #b76e79;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card i {
+      font-size: 40px;
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      color: #b76e79;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* ---------- Footer / CTA ---------- */
+    footer {
+      background: #b76e79;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media(max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Plan Your Dream Wedding</h1>
+    <p>Let us make your big day magical & unforgettable</p>
+    <button class="btn">Book Now</button>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Premium Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-church"></i>
+        <h3>Venue Booking</h3>
+        <p>Royal palaces to beach resorts – we book dream venues within your budget.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-brush"></i>
+        <h3>Decor & Design</h3>
+        <p>Elegant floral themes, LED lights, entry arches & more to match your vibe.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-utensils"></i>
+        <h3>Food Catering</h3>
+        <p>Multi-cuisine buffet with amazing presentation & taste that guests remember.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-music"></i>
+        <h3>Entertainment</h3>
+        <p>Live bands, DJs, dhol walas, celebrity performers – full entertainment guaranteed!</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-camera"></i>
+        <h3>Photography</h3>
+        <p>Cinematic photography and reels that you’ll love watching for years to come.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-heart"></i>
+        <h3>Bride-Groom Entry</h3>
+        <p>Make a royal entry with horse chariots, music, fireworks & crowd cheers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Ready to begin? <a href="#contact">Contact Us</a> to plan your dream day ❤️
+  </footer>
+
+</body>
+</html>

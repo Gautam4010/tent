@@ -24,7 +24,7 @@ body {
   height: 30px;
   width: 100px;
   background-color: #945034;
-  padding: 1px 20px;
+  padding: 1px 10px;
   border-radius: 10px;
   color: white;
   padding-top: 8px;
@@ -39,8 +39,6 @@ body {
 .book:hover a{
   color: #945034;
   font-size: 13px;
-  
-
 }
 
 .book:hover {
@@ -90,7 +88,6 @@ body {
 
 #dropdown{
     display: none;
-    /* border: 1px solid white; */
     transition: transform 1s;
     
 }
@@ -101,15 +98,15 @@ body {
     background-color: black;
     position: absolute;
     padding:10px;
-    margin-left: 1070px;
+    margin-left: 1060px;
     margin-top: 10px;
     border-radius: 10px;
-    border-bottom:1px solid yellow;
+    border-bottom:1px solid #ddb334;
 }
 
 #n1 #gallery:hover #dropdown li{
-  /* float:none; */
   text-align: left;
+  border-bottom:1px solid #ddb334;
   transition:transform 1s;
 }
 
@@ -349,15 +346,25 @@ body {
  
  
 }
+.marriage #marriage2 div .img1{
+  height:300px;
+  width:350px;
+  border:none;
+  margin: 30px 20px 25px 25px;
+  overflow: hidden;
+}
 
 
 .marriage #marriage2 div img{
   height:300px;
   width:350px;
-  margin-bottom: 30px;
- 
- 
+  transition:transform 1s;
 }
+
+.marriage #marriage2 div img:hover{
+  transform:scale(1.2,1.2);
+}
+
 
 .marriage #marriage2 div a{
   
@@ -366,7 +373,7 @@ body {
   background-color: rgb(83, 8, 8);
   border-radius: 20px;
   color: white;
- 
+  
 }
 
 .marriage #marriage2 div a:hover{
@@ -384,6 +391,7 @@ body {
   text-align: center;
   background-color: #f1e7e7;
   height: 100px;
+  width:1288px;
   padding:30px;
 }
 
@@ -704,12 +712,16 @@ body {
 .service #ser .s1 img{
   margin-left: 170px;
   margin-top:20px;
+  transition:transform 1s;
  
+}
+
+.service #ser .s1 img:hover{
+  transform:translate(0,20px);
 }
 
 
 .service #ser .s1 .s2{
-  height:40px;
   width:350px;
   margin-left: 20px;
   color: white;
@@ -795,11 +807,12 @@ body {
 
 #copywrite{
   height:400px;
-  width:100%;
+  width:1348px;
   background-color:black;
   text-align: center;
   padding-top:100px;
   color: white;
 }
+
 
 
