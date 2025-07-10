@@ -139,6 +139,7 @@ body {
   width: 100%;
 }
 
+
 .wellcome {
   background-color: white;
   height: 600px;
@@ -596,17 +597,14 @@ body {
   background-color: rgba(255, 255, 255, 0.397);
 }
 
-
-
-
-
-
-#footerarea{
+#footer-area{
   width:1348px;
-  height:410px;
+  height:420px;
   background:pink;
-
- 
+  display: flex;
+  background-image: url("https://t4.ftcdn.net/jpg/02/50/95/91/240_F_250959105_KFS05K9HHels3cK6nZcID63s1sEjciGn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -614,8 +612,6 @@ body {
 #f1{
   width:300px;
   height:400px;
-  background:black;
-  float:left;
   padding:20px 10px 0.01px 80px;
   color:white;
   text-align: justify;
@@ -623,9 +619,7 @@ body {
 
 #f2{
   width:300px;
-  height:410px;
-  background:black;
-  float:left;
+  height:400px;
   color:white;
   padding:10px 10px 0.01px 10px;
   text-align: left;
@@ -634,13 +628,11 @@ body {
 #f3{
   width:200px;
   height:410px;
-  background:black;
   color:white;
-  float:left;
   padding:10px 10px 0.01px 10px;
   text-align: left;
 }
-
+ 
 #f3 a{
   text-decoration: none;
   color: #e1eebc;
@@ -653,12 +645,9 @@ body {
   transform: translate(40px,0px);
 }
 
-
 #f4{
   width:400px;
   height:410px;
-  background:black;
-  float:left;
   color: #e1eebc;
   padding-left: 17px;
   padding-top:10px;
@@ -667,15 +656,8 @@ body {
 #footer-area h2 {
   color:#ddb334;
 }
+ 
 
-#copywrite{
-  height:400px;
-  width:1348px;
-  background-color:black;
-  text-align: center;
-  padding-top:100px;
-  color: white;
-}
 
 
 
