@@ -434,7 +434,7 @@ body {
 
 
 .venus {
-  background-color: #f1e7e7;
+  background-color:#f1e7e7;
   height: 500px;
   width: 1348px;
   display: flex;
@@ -446,144 +446,7 @@ body {
 }
 
 
-.venus #venus1{
-  background-color: white;
-  height: 370px;
-  width: 300px;
-  margin:10px;
-  border-radius: 20px;
-  border-bottom: 3px solid #ddb334;
-  box-shadow: 2px 6px 5px gray;
-  text-align: center;
-  transition:transform 1s;
-  
-}
 
-
-.venus #venus1 a{
-
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: rgb(83, 8, 8);
-  border-radius: 20px;
-  color: white;
-}
-
-.venus #venus1 a:hover{
-
-  background-color:white ;
-  border:1px solid rgb(83, 8, 8);
-  color:rgb(83, 8, 8);
-}
-    
-
-
-
-.venus #venus1:hover{
-  transform: translate(0px, -20px);
-
-}
-
-.venus #venus1 img{
-  height:250px;
-  width:294px;
-  border-radius: 20px 20px 0 0;
-}
-
-
-.venus #venus2{
-  background-color: white;
-  height: 370px;
-  width: 300px;
-  margin:10px;
-  border-radius: 20px;
-  border-bottom: 3px solid #ddb334;
-  box-shadow: 2px 6px 5px gray;
-  text-align: center;
-  transition:transform 1s;
-
-}
-
-.venus #venus2 a{
-
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: rgb(83, 8, 8);
-  border-radius: 20px;
-  color: white;
-}
-
-.venus #venus2 a:hover{
-
-  background-color:white ;
-  border:1px solid rgb(83, 8, 8);
-  color:rgb(83, 8, 8);
-}
-
-.venus #venus2 a:hover{
-
-   background-color:white ;
-   border:1px solid rgb(83, 8, 8);
-   color:rgb(83, 8, 8);
-}
-
-.venus #venus2:hover{
-  transform: translate(0px, -20px);
-  
-
-}
-
-.venus #venus2 img{
-  height:250px;
-  width:294px;
-  border-radius: 20px 20px 0 0;
-}
-
-
-.venus #venus3{
-  background-color:white;
-  height: 370px;
-  width: 300px;
-  border-radius: 20px;
-  border-bottom: 3px solid #ddb334;
-  box-shadow: 2px 6px 5px gray;
-  text-align: center;
-  transition:transform 1s;
-  margin-left: 10px;
-
-}
-
-.venus #venus3 a{
-
-  text-decoration: none;
-  padding: 10px 20px;
-  margin: 10px;
-  background-color: rgb(83, 8, 8);
-  border-radius: 20px;
-  color: white;
-}
-
-.venus #venus3 a:hover{
-
-  background-color:white ;
-  border:1px solid rgb(83, 8, 8);
-  color:rgb(83, 8, 8);
-}
-
-
-.venus #venus3:hover{
-  transform: translate(0px, -20px);
-  
-
-}
-
-.venus #venus3 img{
-  height:250px;
-  width:294px;
-  border-radius: 20px 20px 0 0;
-}
 
 
 .eve{
