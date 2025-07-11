@@ -6,7 +6,7 @@ body {
 }
 
 .top {
-  background-color: #ddb334;
+  background-color: #FFFBDE;
   height: 45px;
   width: 1348px;
   display: flex;
@@ -23,9 +23,10 @@ body {
 .book {
   height: 30px;
   width: 100px;
-  background-color: #945034;
+  background-color: rgb(23, 129, 23);
   padding: 1px 10px;
-  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   color: white;
   padding-top: 8px;
   
@@ -42,21 +43,20 @@ body {
 }
 
 .book:hover {
-  background-color: #ddb334;
-  border: 1px solid #945034 ;
+  background-color: #FFFBDE;
   color: #945034;
 
 }
 .navbar {
-  background-color: black;
+  background-color:white;
+  background: linear-gradient(to bottom,#FFFBDE,white);
   height: 60px;
   width: 1348px;
   float: left;
   position: sticky;
   top: 0px;
-  border-bottom: 3px solid #ddb334;
-  box-shadow: 2px 2px 5px rgb(121, 121, 68);
   z-index: 1000;
+  box-shadow: 0px 10px 10px -5px grey;
 }
 
 #n1 {
@@ -71,19 +71,24 @@ body {
 }
 #n1 a {
   text-decoration: none;
-  color: #fada7a;
-  background-color: black;
+  color:#c59505;
+  /* background-color: black; */
   padding: 10px 25px;
   border-radius: 10px;
+  background: linear-gradient(to bottom,#FFFBDE,white);
+  transition:all 1s;
 }
 
 #n1 a:hover {
-  background-color: #ddb334;
+  
   color: black;
+  transform:scale(1.05,1.05);
+  box-shadow: 2px 2px 3px 5px rgb(223, 220, 220);
+  
 }
 
 #n1 #home a{
-  border-bottom: 1px solid #fada7a; 
+  border-bottom: 1px solid #c59505; 
 }
 
 #dropdown{
@@ -95,7 +100,7 @@ body {
 #n1 #gallery:hover #dropdown{
     display:block;
     list-style-type: none;
-    background-color: black;
+    background: linear-gradient(to bottom,white,#FFFBDE);
     position: absolute;
     padding:10px;
     margin-left: 1060px;
@@ -106,12 +111,14 @@ body {
 
 #n1 #gallery:hover #dropdown li{
   text-align: left;
-  border-bottom:1px solid #ddb334;
+  border-bottom:1px solid #c59505;
   transition:transform 1s;
+
 }
 
 #n1 #gallery #dropdown li:hover{
   transform: translate(10px,0px);
+  color:black;
 }
 
 
@@ -119,6 +126,7 @@ body {
     
     text-align: center;
     padding:10px;
+    color:#c59505;
     
 }
 
@@ -132,6 +140,7 @@ body {
   background-color: pink;
   height: 800px;
   width: 1348px;
+  margin-top: 80px;
 }
 
 .slider-area img {
@@ -165,11 +174,22 @@ body {
   font-size: 20px;
 }
 
-.wellcome #welcome1 h1 {
+.wellcome #welcome1 h1{
   text-shadow: 2px 6px 5px gray;
   color:black;
   text-align: center;
+  height:70px;
+  padding-top:20px;
+  transition: all 1s;
+  background-color: antiquewhite;
 }
+
+.wellcome #welcome1 h1:hover {
+  transform:scale(1.02,1.02);
+  box-shadow: 10px 10px 5px gray;
+
+}
+
 
 .wellcome #welcome1 h2 {
   color:grey;
@@ -186,6 +206,14 @@ body {
   text-shadow: 2px 6px 5px gray;
 }
 
+.seg img{
+  transition:transform 1s;
+}
+
+.seg img:hover{
+  transform: translate(0,10px);
+}
+
 .segment {
   height: 700px;
   width: 1348px;
@@ -196,6 +224,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+
  
 }
 
@@ -210,7 +239,9 @@ body {
   padding:10px ;
   text-align: justify;
 
+
 }
+
 
 
 .segment #s div  h3{
@@ -231,6 +262,14 @@ body {
   text-align: center;
 }
 
+.test-up img{
+  transition:transform 1s;
+}
+
+.test-up img:hover{
+  transform: translate(0,10px);
+}
+
 .test-up h1{
   
   text-shadow: 2px 6px 5px gray;
@@ -247,13 +286,36 @@ body {
 }
 
 
+
 .testing #testing1{
     height:300px;
     width:33%;
     margin:10px;
     overflow: hidden;
-    
+    position:relative;   
 }
+
+.detail{
+   position:absolute;
+   bottom:-200px;
+   height:100px;
+   width:100%;
+   background:linear-gradient(to top, black,transparent);
+   transition:all 1s;
+   
+}
+
+.detail h1{
+  text-align:center;
+  color:white;
+
+}
+
+
+.testing #testing1:hover .detail{
+  bottom:0;
+}
+
 
 .testing #testing1 img:hover{
  transform: scale(1.2,1.2);
@@ -263,6 +325,7 @@ body {
 .testing #testing1 img{
    height: 100%;
    width:100%;
+   transition: transform 1s;
 
 }
 
@@ -272,8 +335,15 @@ body {
   background-color:yellow;
   margin:10px;
   overflow: hidden;
+  position:relative;
 
 }
+
+
+.testing #testing2:hover .detail{
+  bottom:0;
+}
+
 
 .testing #testing2 img:hover{
   transform: scale(1.2,1.2);
@@ -283,6 +353,8 @@ body {
 .testing #testing2 img{
   height: 100%;
   width:100%;
+  transition: transform 1s;
+
 }
 .testing #testing3{
   height:300px;
@@ -290,8 +362,15 @@ body {
   background-color:yellow;
   margin:10px;
   overflow: hidden;
+  position:relative;
 
 }
+
+
+.testing #testing3:hover .detail{
+  bottom:0;
+}
+
 
 .testing #testing3 img:hover{
   transform: scale(1.2,1.2);
@@ -301,6 +380,8 @@ body {
 .testing #testing3 img{
   height: 100%;
   width:100%;
+  transition: transform 1s;
+
 }
 
 .marriage{
@@ -390,7 +471,7 @@ body {
 
 .venus-up{
   text-align: center;
-  background-color: #f1e7e7;
+  background: linear-gradient(to bottom,white,#FDFFB8); 
   height: 100px;
   width:1288px;
   padding:30px;
@@ -423,7 +504,7 @@ body {
 
 
 .venus-up ul li a:hover{
-      background-color: #f1e7e7;
+      background-color:  #FDFFB8;
       color:rgb(83, 8, 8);
       border:solid 1px rgb(83, 8, 8);
 }
@@ -435,7 +516,7 @@ body {
 
 
 .venus {
-  background-color:#f1e7e7;
+  background-color: #FDFFB8;
   height: 500px;
   width: 1348px;
   display: flex;
@@ -451,13 +532,21 @@ body {
 
 
 .eve{
-  background-color:#e1eebc;
+  background: linear-gradient(to bottom,#FDFFB8,#e1eebc); 
   height: 60px;
   width: 1348px;
   float: left;
   justify-content: center;
   text-align: center;
  
+}
+
+.eve img{
+  transition:transform 1s;
+}
+
+.eve img:hover{
+  transform: translate(0,10px);
 }
 
 .eve h1{
@@ -481,14 +570,14 @@ body {
   height: 400px;
   width: 400px;
   margin:10px;
-  border-radius:10px;
+  border-bottom-right-radius:50px;
 }
 
 
 .event #event2{
-  background-color:pink;
   height: 400px;
   width: 600px;
+  
 }
 
 .event #event1 ul li {
@@ -509,6 +598,7 @@ body {
 .event #event2 img{
   width:100%;
   height:100%;
+  border-top-left-radius:50px;
 }
 
 
@@ -521,6 +611,14 @@ body {
   text-shadow: 2px 6px 5px gray;
 }
 
+.service-up img{
+  transition:transform 1s;
+}
+
+.service-up img:hover{
+  transform: translate(0,10px);
+}
+
 .service {
   height: 1100px;
   width: 1348px;
@@ -528,12 +626,11 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #090c09a1;
-  /* background-image: url("http://www.rktent.in/icon.jpg"); */
+  background-image: url("image/image1.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 3px solid #ddb334;
- 
 
 }
 
@@ -600,9 +697,9 @@ body {
 #footer-area{
   width:1348px;
   height:420px;
-  background:pink;
+  background:black;
   display: flex;
-  background-image: url("https://t4.ftcdn.net/jpg/02/50/95/91/240_F_250959105_KFS05K9HHels3cK6nZcID63s1sEjciGn.jpg");
+  /* background-image: url("https://t4.ftcdn.net/jpg/02/50/95/91/240_F_250959105_KFS05K9HHels3cK6nZcID63s1sEjciGn.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -656,7 +753,19 @@ body {
 #footer-area h2 {
   color:#ddb334;
 }
- 
+
+.copyright{
+  height:50px;
+  width:1348px;
+  background-color:rgb(48, 45, 45);
+}
+
+.copyright h3{
+  margin-top:0;
+  text-align:center;
+  padding-top:15px;
+  color:white;
+}
 
 
 

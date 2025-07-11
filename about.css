@@ -1,132 +1,137 @@
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   
-  .top {
-    background-color: #ddb334;
-    height: 45px;
-    width: 1348px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .top a {
-    text-decoration: none;
-    padding-right: 50px;
-    color: #945034;
-    font-weight: 800;
-  }
-  
-  .book {
-    height: 30px;
-    width: 100px;
-    background-color: #945034;
-    padding: 1px 20px;
-    border-radius: 10px;
-    color: white;
-    padding-top: 8px;
-    
-  }
-
-  .book a{
-    color:white;
-    padding:10px 10px;
-    font-size: 13px;
-  }
-  
-  .book:hover a{
-    color: #945034;
-    font-size: 13px;
-    
-  
-  }
-  
-  .book:hover {
-    background-color: #ddb334;
-    color: #945034;
-    border: 1px solid #945034 ;
-  
-  }
-  .navbar {
-    background-color: black;
-    height: 60px;
-    width: 1348px;
-    float: left;
-    position: sticky;
-    top: 0px;
-    border-bottom: 3px solid #ddb334;
-    box-shadow: 2px 2px 5px rgb(121, 121, 68);
-    z-index: 1000;
-  }
-  
-  #n1 {
-    color: #fada7a;
-    padding-left: 5px;
-    list-style-type: none;
-    text-align: right;
-  }
-  #n1 > li {
-    display: inline;
-    padding-right: 10px;
-  }
-  #n1 a {
-    text-decoration: none;
-    color: #fada7a;
-    background-color: black;
-    padding: 10px 25px;
-    border-radius: 10px;
-  }
-  
-  #n1 a:hover {
-    background-color: #ddb334;
-    color: black;
-  }
-  
-  #dropdown{
-      display: none;
-  }
-  
-  #n1 li:hover #dropdown{
-      display:block;
-      list-style-type: none;
-      background-color: black;
-      position: absolute;
-      padding:10px;
-      margin-left: 1070px;
-      margin-top: 20px;
-       border-radius: 10px;
-  }
-  
-  #n1 li:hover #dropdown li{
-    float:none;
-    text-align: left;
-   
-   
-  }
-  
-  #n1 ul li{
-      
-      text-align: center;
-      padding:10px;
-      
-  }
-
-  #n1 #about a{
-    border-bottom: 1px solid #fada7a; 
 }
+
+.top {
+  background-color: #FFFBDE;
+  height: 45px;
+  width: 1348px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top a {
+  text-decoration: none;
+  padding-right: 50px;
+  color: #945034;
+  font-weight: 800;
+}
+
+.book {
+  height: 30px;
+  width: 100px;
+  background-color: rgb(31, 211, 31);
+  padding: 1px 10px;
+  border-radius: 10px;
+  color: white;
+  padding-top: 8px;
   
-  .navbar ul li i{
-    padding-left:10px;
-  }
+}
+.book a{
+  color:white;
+  padding:10px 10px;
+  font-size: 13px;
+}
+
+.book:hover a{
+  color: #945034;
+  font-size: 13px;
+}
+
+.book:hover {
+  background-color: #FFFBDE;
+  color: #945034;
+
+}
+.navbar {
+  background-color:white;
+  background: linear-gradient(to bottom,#FFFBDE,white);
+  height: 60px;
+  width: 1348px;
+  float: left;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  box-shadow: 0px 10px 10px -5px grey;
+}
+
+#n1 {
+  color: #fada7a;
+  padding-left: 5px;
+  list-style-type: none;
+  text-align: right;
+}
+#n1 > li {
+  display: inline;
+  padding-right: 10px;
+}
+#n1 a {
+  text-decoration: none;
+  color: #fada7a;
+  background-color: black;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+#n1 a:hover {
+  background: linear-gradient(to bottom,#FFFBDE,white);
+  color: black;
+}
+
+#n1 #home a{
+  border-bottom: 1px solid #fada7a; 
+}
+
+#dropdown{
+    display: none;
+    transition: transform 1s;
+    
+}
+
+#n1 #gallery:hover #dropdown{
+    display:block;
+    list-style-type: none;
+    background: linear-gradient(to bottom,white,#FFFBDE);
+    position: absolute;
+    padding:10px;
+    margin-left: 1060px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-bottom:1px solid #ddb334;
+}
+
+#n1 #gallery:hover #dropdown li{
+  text-align: left;
+  border-bottom:1px solid #ddb334;
+  transition:transform 1s;
+}
+
+#n1 #gallery #dropdown li:hover{
+  transform: translate(10px,0px);
+}
+
+
+#n1 ul li{
+    
+    text-align: center;
+    padding:10px;
+    color:black;
+    
+}
+
+.navbar ul li i{
+  padding-left:10px;
+}
 
 
 
   .slider-area{
     height: 1000px;
     width:1348px;
+    margin-top:80px;
   }
   
   .slider-area img{
@@ -136,7 +141,7 @@ body {
 
   .about{
     height:600px;
-    width:100%;
+    width:1348px;
   }
 
   .about .about1{
@@ -148,8 +153,9 @@ body {
     text-align: center;
     margin-top:60px;
     padding:30px;
-    background-color: #f3db94;
+    background: linear-gradient(to bottom,#f3db94,white);
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-top:0px;
   }
 
 
@@ -169,7 +175,7 @@ body {
 
 
   .card-intro{
-    background-color: #f1e7e7;
+    background: linear-gradient(to bottom,white,#f1e7e7);
     height: 150px;
 
     
@@ -195,7 +201,7 @@ body {
 
   .card-section{
     height: 800px;
-    width:100%;
+    width:1348px;
     background-color: whitesmoke;
 
   }
@@ -411,13 +417,14 @@ body {
     font-size: 18px;
   }
 
-
-  #footerarea{
-    width:1200px;
-    height:410px;
-    background:pink;
-  
-   
+  #footer-area{
+    width:1348px;
+    height:420px;
+    background:black;
+    display: flex;
+    /* background-image: url("https://t4.ftcdn.net/jpg/02/50/95/91/240_F_250959105_KFS05K9HHels3cK6nZcID63s1sEjciGn.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   
@@ -425,8 +432,6 @@ body {
   #f1{
     width:300px;
     height:400px;
-    background:black;
-    float:left;
     padding:20px 10px 0.01px 80px;
     color:white;
     text-align: justify;
@@ -434,9 +439,7 @@ body {
   
   #f2{
     width:300px;
-    height:410px;
-    background:black;
-    float:left;
+    height:400px;
     color:white;
     padding:10px 10px 0.01px 10px;
     text-align: left;
@@ -445,28 +448,26 @@ body {
   #f3{
     width:200px;
     height:410px;
-    background:black;
     color:white;
-    float:left;
     padding:10px 10px 0.01px 10px;
     text-align: left;
   }
-  
+   
   #f3 a{
     text-decoration: none;
     color: #e1eebc;
+    transition:transform 4s;
+    display:block;
   }
   
   #f3 a:hover{
     color:#ddb334;
+    transform: translate(40px,0px);
   }
-  
   
   #f4{
     width:400px;
     height:410px;
-    background:black;
-    float:left;
     color: #e1eebc;
     padding-left: 17px;
     padding-top:10px;
@@ -476,3 +477,15 @@ body {
     color:#ddb334;
   }
   
+  .copyright{
+    height:50px;
+    width:1348px;
+    background-color:rgb(48, 45, 45);
+  }
+  
+  .copyright h3{
+    margin-top:0;
+    text-align:center;
+    padding-top:15px;
+    color:white;
+  }
